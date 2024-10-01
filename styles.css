@@ -1,0 +1,177 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: #ffffff;
+    text-align: center;
+}
+
+header {
+    background-color: #162447;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-container h1 {
+    color: #e94560;
+    margin: 0;
+    font-size: 36px;
+}
+
+.floating-buttons {
+    position: fixed; /* Change to fixed positioning */
+    bottom: 20px; /* Distance from the bottom */
+    width: calc(100% - 40px); /* Full width minus padding */
+    display: flex;
+    justify-content: space-between; /* Space buttons to left and right */
+    padding: 0 20px;
+    z-index: 10; /* Ensure buttons are above other content */
+}
+
+.floating-button {
+    background-color: #1f4068;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.floating-button:hover {
+    background-color: #e94560;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: inline-flex;
+    gap: 15px;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 15px;
+}
+
+.nav-links li a:hover {
+    background-color: #e94560;
+    border-radius: 5px;
+}
+
+/* Tab Section styles */
+.tab-section {
+    position: relative;
+    max-width: 800px;
+    margin: 80px auto; /* Center the section */
+    padding: 60px 20px;
+    background-color: #162447;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* Tab Title floating above the tab */
+.tab-title {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e94560;
+    color: #ffffff;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Content within each tab */
+.tab-content {
+    margin-top: 40px; /* To account for the floating title */
+}
+
+.tab-content h2 {
+    font-size: 28px;
+    color: #e94560;
+    margin-bottom: 20px;
+}
+
+.tab-content p,
+.tab-content ul {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+/* Project grid */
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-item {
+    background-color: #1f4068;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.project-item h3 {
+    font-size: 24px;
+    color: #e94560;
+}
+
+.project-item a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #1f4068;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.project-item a:hover {
+    background-color: #e94560;
+}
+
+/* Skills section */
+.skills-section ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Footer styling */
+footer {
+    padding: 40px;
+    text-align: center;
+    background-color: #162447;
+}
+
+footer a {
+    color: #e94560;
+    text-decoration: none;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-links a:hover {
+    color: #e94560;
+}
